@@ -37,15 +37,15 @@ foreach ($products as $product) {
 		<nav class="navbar fixed-bottom navbar-expand navbar-light bg-light justify-content-between">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item mr-5">
-					<a class="nav-link btn btn-lg btn-danger" href="#" id="clear" tabindex="3">Clear</a>
+					<a class="nav-link btn btn-lg btn-danger" href="#" id="clear" tabindex="1">Clear</a>
 				</li>
 				<li class="nav-item">
-					<input class="mr-sm-2" type="text" placeholder="Custom Product" aria-label="Custom Product" id="customtext">
-					<input class="mr-sm-2" type="number" placeholder="1.00" aria-label="Price" id="customprice" style="width:60px" step="0.5">
-					<a class="btn btn-lg btn-primary" href="#" id="customadd">Add</a>
+					<input class="mr-sm-2" type="text" placeholder="Custom Product" aria-label="Custom Product" id="customtext" tabindex="2">
+					<input class="mr-sm-2" type="number" placeholder="1.00" aria-label="Price" id="customprice" style="width:60px" step="0.5" tabindex="3">
+					<a class="btn btn-lg btn-primary" href="#" id="customadd" tabindex="4">Add</a>
 				</li>
 			</ul>
-			<a class="btn btn-lg btn-success disabled" href="#" id="buy" tabindex="2">Buy</a>
+			<a class="btn btn-lg btn-success disabled" href="#" id="buy" tabindex="5">Buy</a>
 		</nav>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

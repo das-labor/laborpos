@@ -1,0 +1,14 @@
+.btn-sq-lg {
+	width: 150px !important;
+	height: 150px !important;
+	margin: 1px -1px;
+	white-space: pre-wrap;
+}
+
+#products {
+	overflow-x: hidden;
+}
+
+#price {
+	text-align: center;
+}

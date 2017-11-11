@@ -11,12 +11,14 @@
 0	1.00	Hermann Lakritz 0.33 l
 0	1.00	Hermann Kaffee 0.33 l
 0	1.00	Spezi 0.33 l
+2	2.00	Matcha 0.33 l
 1	0.50	Duplo
 1	0.50	Kinderriegel
 1	0.50	Knoppers
 1	0.50	Pick Up
 1	0.50	Mentos
 1	0.50	Karamell
+1	0.50	Ei
 2	1.00	Twix
 2	1.00	Mars
 2	1.00	Snickers
@@ -24,7 +26,7 @@
 2	1.00	Lion
 2	1.00	Kit Kat
 2	1.00	Milky Way
-2	1.00	Ü-Ei
+2	1.00	Ue-Ei
 2	1.00	Goldbären
 2	1.00	Mr. Tom
 2	1.00	Nic Nac's
@@ -37,4 +39,4 @@
 3	10	Scratchcard
 3	15	Eintritt WE
 3	15	T-Shirt
-5	2.50	Tschunk
+5	2.5	Tschunk

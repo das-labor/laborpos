@@ -54,4 +54,25 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$("#undo").click(function(e){
+		e.preventDefault();
+		for (item in list) {
+			list[item].price = -list[item].price;
+		}
+		$.post("buy.php", {"data": JSON.stringify(list)}, function(result){
+			switch (result) {
+				case 'OK':
+				list = [];
+				generateList();
+				$("#buy").addClass('disabled');
+				$("#sound2")[0].currentTime = 0;
+				$("#sound2")[0].play();
+				break;
+
+				default:
+				alert("Error: " + result);
+				break;
+			}
+		});
+	});
 });

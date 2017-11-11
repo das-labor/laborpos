@@ -19,7 +19,7 @@ $(document).ready(function(){
 		data = {'product': splits[0], 'price': parseFloat(splits[1])};
 		list.push(data);
 		generateList();
-		$("#buy").removeClass('disabled');
+		$(".action").removeClass('disabled');
 		$("#buy").focus();
 	});
 	$("#customadd").click(function(e){
@@ -27,14 +27,14 @@ $(document).ready(function(){
 		data = {'product': $("#customtext").val(), 'price': parseFloat($("#customprice").val())};
 		list.push(data);
 		generateList();
-		$("#buy").removeClass('disabled');
+		$(".action").removeClass('disabled');
 		$("#buy").focus();
 	});
 	$("#clear").click(function(e){
 		e.preventDefault();
 		list = [];
 		generateList();
-		$("#buy").addClass('disabled');
+		$(".action").addClass('disabled');
 	});
 	$("#buy").click(function(e){
 		e.preventDefault();
@@ -43,7 +43,7 @@ $(document).ready(function(){
 				case 'OK':
 				list = [];
 				generateList();
-				$("#buy").addClass('disabled');
+				$(".action").addClass('disabled');
 				$("#sound")[0].currentTime = 0;
 				$("#sound")[0].play();
 				break;
@@ -64,7 +64,7 @@ $(document).ready(function(){
 				case 'OK':
 				list = [];
 				generateList();
-				$("#buy").addClass('disabled');
+				$(".action").addClass('disabled');
 				$("#sound2")[0].currentTime = 0;
 				$("#sound2")[0].play();
 				break;

@@ -18,13 +18,14 @@
 				<div class="col-12 col-md-3" style="height: 400px"></div>
 				<div class="col-12 col-md-9" id="products"><?php
 $colors = ['primary', 'secondary', 'success', 'light', 'info', 'warning', 'danger'];
+$csscolors = ['#ff00ff'];
 $products = file("db/products");
 foreach ($products as $product) {
 	list($colortext, $pricetext, $name) = explode("\t", trim($product));
 	$color = intval($colortext);
 	$price = floatval($pricetext);
 	echo "
-					<a href=\"#\" class=\"btn btn-sq-lg btn-" . $colors[$color] . "\">
+					<a href=\"#\" class=\"btn btn-sq-lg" . ($color<7?" btn-" . $colors[$color]:"") . "\"" . ($color>=7?" style=\"background:".$csscolors[$color-7].";color:#fff\"":"") . ">
 						" . $name . "<br>" . number_format($price, 2) . "
 					</a>";
 }

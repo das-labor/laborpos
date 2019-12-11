@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+print("Content-type:text/html\r\n\r\n", end="")
+print("""<!DOCTYPE html>
 <html lang="de">
 	<head>
 		<title>LaborPOS</title>
@@ -16,20 +18,22 @@
 					<div id="list"></div>
 				</div>
 				<div class="col-12 col-md-3" style="height: 400px"></div>
-				<div class="col-12 col-md-9" id="products"><?php
-$colors = ['primary', 'secondary', 'success', 'light', 'info', 'warning', 'danger'];
-$csscolors = ['#ff00ff'];
-$products = file("db/products");
-foreach ($products as $product) {
-	list($colortext, $pricetext, $name) = explode("\t", trim($product));
-	$color = intval($colortext);
-	$price = floatval($pricetext);
-	echo "
-					<a href=\"#\" class=\"btn btn-sq-lg" . ($color<7?" btn-" . $colors[$color]:"") . "\"" . ($color>=7?" style=\"background:".$csscolors[$color-7].";color:#fff\"":"") . ">
-						" . $name . "<br>" . number_format($price, 2) . "
-					</a>";
-}
-?>
+				<div class="col-12 col-md-9" id="products">""")
+colors = ['primary', 'secondary', 'success', 'light', 'info', 'warning', 'danger']
+csscolors = ['#ff00ff'];
+fh = open("db/products")
+products = fh.readlines()
+fh.close()
+for product in products:
+	(colortext, pricetext, name) = product.strip().split("\t")
+	color = int(colortext)
+	price = float(pricetext)
+	print("""
+					<a href="#" class="btn btn-sq-lg""" + ((" btn-" + colors[color]) if color < 7 else "") + "\"" +
+		((" style=\"background:" + csscolors[color - 7] + ";color:#fff\"") if color >= 7 else "") + """>
+						""" + name + "<br>{:.2f}".format(price) + """
+					</a>""")
+print("""
 				</div>
 				<div class="col-12" style="height:70px;"></div>
 			</div>
@@ -46,10 +50,12 @@ foreach ($products as $product) {
 					<a class="btn btn-lg btn-primary" href="#" id="customadd" tabindex="4">Add</a>
 				</li>
 				<li class="nav-item mr-5">
-					<a class="btn btn-lg btn-warning disabled action" href="#" id="undo" tabindex="5">Undo</a>
+					<a class="btn btn-lg btn-warning disabled action" href="#" id="undocash" tabindex="5">Undo (Cash)</a>
+					<a class="btn btn-lg btn-warning disabled action" href="#" id="undo" tabindex="6">Undo (Scratch)</a>
 				</li>
 			</ul>
-			<a class="btn btn-lg btn-success disabled action" href="#" id="buy" tabindex="6">Buy</a>
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buycash" tabindex="7">Cash</a>&nbsp;
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buy" tabindex="8">Scratch</a>
 		</nav>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -59,3 +65,4 @@ foreach ($products as $product) {
 		<audio id="sound2" src="assets/zonk.mp3" autostart="false"></audio>
 	</body>
 </html>
+""")

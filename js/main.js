@@ -11,6 +11,24 @@ function generateList() {
 	$('#price').text(price.toFixed(2));
 }
 
+function buy(method, sound) {	
+	$.post("buy.py", {"method": method, "data": JSON.stringify(list)}, function(result){
+		switch (result) {
+			case 'OK':
+			list = [];
+			generateList();
+			$(".action").addClass('disabled');
+			$(sound)[0].currentTime = 0;
+			$(sound)[0].play();
+			break;
+
+			default:
+			alert("Error: " + result);
+			break;
+		}
+	});
+}
+
 $(document).ready(function(){
 	generateList();
 	$("#products a").click(function(e){
@@ -38,41 +56,24 @@ $(document).ready(function(){
 	});
 	$("#buy").click(function(e){
 		e.preventDefault();
-		$.post("buy.php", {"data": JSON.stringify(list)}, function(result){
-			switch (result) {
-				case 'OK':
-				list = [];
-				generateList();
-				$(".action").addClass('disabled');
-				$("#sound")[0].currentTime = 0;
-				$("#sound")[0].play();
-				break;
-
-				default:
-				alert("Error: " + result);
-				break;
-			}
-		});
+		buy(0, "#sound");
+	});
+	$("#buycash").click(function(e){
+		e.preventDefault();
+		buy(1, "#sound");
 	});
 	$("#undo").click(function(e){
 		e.preventDefault();
 		for (item in list) {
 			list[item].price = -list[item].price;
 		}
-		$.post("buy.php", {"data": JSON.stringify(list)}, function(result){
-			switch (result) {
-				case 'OK':
-				list = [];
-				generateList();
-				$(".action").addClass('disabled');
-				$("#sound2")[0].currentTime = 0;
-				$("#sound2")[0].play();
-				break;
-
-				default:
-				alert("Error: " + result);
-				break;
-			}
-		});
+		buy(0, "#sound2");
+	});
+	$("#undocash").click(function(e){
+		e.preventDefault();
+		for (item in list) {
+			list[item].price = -list[item].price;
+		}
+		buy(1, "#sound2");
 	});
 });

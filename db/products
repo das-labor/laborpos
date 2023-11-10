@@ -10,16 +10,16 @@
 #6	1.50	Coca Cola 0.5 l
 #6	1.50	Fanta 0.5 l
 #6	1.50	Sprite 0.5 l
-6	1.50	OeTea Pfirsich 0.5 l
-6	1.50	OeTea Wassermelone 0.5 l
+6	1.50	OeTea Pfirsich 0.5 l	4014086011801
+6	1.50	OeTea Wassermelone 0.5 l	4014086011825
 3	1.00	Wasser 0.7 l
 6	1.00	Mate Cola 0.33 l
 #0	1.00	FritzKola
-#6	1.00	Premium Cola 0.33 l
+6	1.00	Premium Cola 0.33 l
 #0	1.00	Hermann Rhabarber-Erdbeere
 0	1.00	Hermann Apfel 0.33 l
 0	1.00	Hermann Apfel-Kirsch 0.33 l
-#0	1.00	Hermann Mocca 0.33 l
+0	1.00	Hermann Mokka 0.33 l
 #0	1.00	Hermann Orange 0.33 l
 0	1.00	Hermann Lakritz 0.33 l
 0	1.00	Hermann Melone-Limette 0.33 l

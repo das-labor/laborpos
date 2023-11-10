@@ -1,4 +1,5 @@
 list = [];
+ean = "";
 
 function generateList() {
 	html = "";
@@ -28,6 +29,32 @@ function buy(method, sound) {
 		}
 	});
 }
+
+$(document).keydown(function(e){
+    char = String.fromCharCode(e.keyCode);
+    if (char == "\r" || char == "\n") {
+        if (ean == "") {
+            return true;
+        }
+        clickedOne = false;
+        $("#products a[data-ean]").each(function(){
+            if ($(this).data("ean") == ean) {
+                $(this).click();
+                clickedOne = true;
+            }
+        });
+        if (!clickedOne) {
+            alert("Error: unknown EAN scanned\n" + ean);
+        }
+        ean = "";
+        return false;
+    }
+    if (char>='0' && char<='9') {
+        ean += char;
+    } else {
+        ean = "";
+    }
+});
 
 $(document).ready(function(){
 	generateList();

@@ -27,12 +27,18 @@ fh.close()
 for product in products:
 	if product.strip().startswith('#'):
 		continue
-	(colortext, pricetext, name) = product.strip().split("\t")
+	product_data = product.strip().split("\t")
+	if len(product_data) < 4:
+		(colortext, pricetext, name) = product_data
+		ean = None
+	else:
+		(colortext, pricetext, name, ean) = product_data
 	color = int(colortext)
 	price = float(pricetext)
 	print("""
 					<a href="#" class="btn btn-sq-lg""" + ((" btn-" + colors[color]) if color < 7 else "") + "\"" +
-		((" style=\"background:" + csscolors[color - 7] + ";color:#fff\"") if color >= 7 else "") + """>
+		((" style=\"background:" + csscolors[color - 7] + ";color:#fff\"") if color >= 7 else "") +
+		(" data-ean=\"" + ean + "\"" if ean else "") + """>
 						""" + name + "<br>{:.2f}".format(price) + """
 					</a>""")
 print("""

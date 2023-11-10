@@ -38,7 +38,7 @@ $(document).keydown(function(e){
         }
         clickedOne = false;
         $("#products a[data-ean]").each(function(){
-            if ($(this).data("ean") == ean) {
+            if ($(this).data("ean").toString().split(",").includes(ean)) {
                 $(this).click();
                 clickedOne = true;
             }

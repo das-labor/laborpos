@@ -1,57 +1,58 @@
-5	1.50	Club Mate 0.5 l
-5	1.50	Club Mate ICE-T
-5	1.50	Club Mate Zero
+5	1.50	Club Mate 0.5 l	4029764001807
+5	1.50	Club Mate ICE-T	4029764001814
+5	1.50	Club Mate Zero	4029764001906
 #5	1.50	Club Mate Granate
 #5	1.00	MioMio 0.33 l
 #5	1.50	MioMio Banane
 #5	1.50	MioMio Zero
-5	1.50	Flora Mate 0.5 l
-5	1.50	Club Mate Winter 0.5 l
+#5	1.50	Flora Mate 0.5 l
+5	1.50	Club Mate Winter 0.5 l	4029764001869
 #6	1.50	Coca Cola 0.5 l
 #6	1.50	Fanta 0.5 l
 #6	1.50	Sprite 0.5 l
 6	1.50	OeTea Pfirsich 0.5 l	4014086011801
 6	1.50	OeTea Wassermelone 0.5 l	4014086011825
 3	1.00	Wasser 0.7 l
-6	1.00	Mate Cola 0.33 l
+6	1.00	Mate Cola 0.33 l	4029764001883
 #0	1.00	FritzKola
-6	1.00	Premium Cola 0.33 l
+6	1.00	Premium Cola 0.33 l	4270002470705
 #0	1.00	Hermann Rhabarber-Erdbeere
-0	1.00	Hermann Apfel 0.33 l
-0	1.00	Hermann Apfel-Kirsch 0.33 l
-0	1.00	Hermann Mokka 0.33 l
+0	1.00	Hermann Apfel 0.33 l	1094922076242
+0	1.00	Hermann Apfel-Kirsch 0.33 l	1094922076259
+0	1.00	Hermann Mokka 0.33 l	1094922319639
 #0	1.00	Hermann Orange 0.33 l
-0	1.00	Hermann Lakritz 0.33 l
-0	1.00	Hermann Melone-Limette 0.33 l
+0	1.00	Hermann Lakritz 0.33 l	1094922076303
+0	1.00	Hermann Melone-Limette 0.33 l	1094922076235
 #0	1.00	Hermann Zitrone 0.33 l
-0	1.00	Hermann Orange 0.33 l
-0	1.00	Hermann Holunder 0.33 l
-6	1.50	Paulaner Spezi 0.5 l
-6	1.00	Spezi 0.33 l
-3	1.00	Durstloescher 0.5 l
+0	1.00	Hermann Orange 0.33 l	1094922076228
+0	1.00	Hermann Holunder 0.33 l	4270002470736
+6	1.50	Paulaner Spezi 0.5 l	4066600603405
+#6	1.00	Spezi 0.33 l
+3	1.00	Durstloescher 0.5 l	4100060022700
 #0	1.00	Frohlunder 0.33 l
 #1	0.50	Duplo
 #1	0.50	Kinderriegel
-1	1.00	Pick Up
-1	0.50	Memtos
+1	1.00	Pick Up	4017100263101
+1	0.50	Memtos	87108026
 #1	0.50	Hanuta
 #2	1.00	Twix
-2	1.00	Mars
+2	1.00	Mars	5000159407236
 #2	1.00	Snickers
 #2	1.00	Bounty
-2	1.00	Lion
+2	1.00	Lion	7613032625474
 #2	1.00	Kit Kat Crunchy
-2	1.00	Kit Kat
+2	1.00	Kit Kat	40345116
 #2	1.00	Milky Way 2
-2	1.00	Goldbaeren
-2	1.00	Mr. Tom
+2	1.00	Goldbaeren	4001686301555
+2	1.00	Mr. Tom	4021700800000
 #2	1.00	Nic Nac's
 #2	1.00	Knoppers
 #2	1.00	M&M's
 #2	1.00	Daim
-2	1.00	Fritt Stick
-2	1.00	Chips
+2	1.00	Fritt Stick	4000607562105,4000607523205,4000607529702
+2	1.00	Chips	4003586100474
 #2	1.00	Ringli
+2	0.50	Erdnuesse	4004980501102
 3	10.00	Scratchcard
 3	21.00	Eintritt WE
 3	10.00 	Eintritt WE U18
@@ -61,7 +62,7 @@
 #3	20.00	T-Shirt
 5	3	Tschunk
 #5	1	Sake
-7	8.00	USB-Loetkolben
+7	8.00	USB-Loetkolben	4049702048879
 #7	6.00	Bad-USB-Stick
 #7	23.00	LaborBadge
 #7	5	Bauteile Loetworkshop

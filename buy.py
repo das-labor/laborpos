@@ -17,7 +17,7 @@ except IOError:
 
 post = cgi.FieldStorage()
 boughts = json.loads(post["data"].value);
-method = "B" if post["method"].value == "1" else "S"
+method = "B" if post["method"].value == "1" else "C" if post["method"].value == "2" else "S"
 nowdt = datetime.datetime.now()
 nowtuple = nowdt.timetuple()
 nowtimestamp = time.mktime(nowtuple)
@@ -34,13 +34,13 @@ for bought in boughts:
 
 fh.close()
 
-s = open("/dev/ttyUSB0", "wb")
-s.write(b"\x1b\x52\x06")		# cp858
+#s = open("/dev/ttyUSB0", "wb")
+#s.write(b"\x1b\x52\x06")		# cp858
 
-def printout(st):
-	s.write(st.encode("cp858"))
-	s.flush()
+#def printout(st):
+#	s.write(st.encode("cp858"))
+#	s.flush()
 
-printout(printstr)
+#printout(printstr)
 
 print("OK",end="")

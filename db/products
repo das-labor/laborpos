@@ -1,46 +1,69 @@
 5	1.50	Club Mate 0.5 l
-5	1.00	Flora Mate 0.33 l
+5	1.50	Club Mate ICE-T
+5	1.50	Club Mate Zero
+#5	1.50	Club Mate Granate
+#5	1.00	MioMio 0.33 l
+#5	1.50	MioMio Banane
+#5	1.50	MioMio Zero
+5	1.50	Flora Mate 0.5 l
 5	1.50	Club Mate Winter 0.5 l
-6	1.50	Coca Cola 0.5 l
-6	1.50	Fanta 0.5 l
-6	1.50	Sprite 0.5 l
+#6	1.50	Coca Cola 0.5 l
+#6	1.50	Fanta 0.5 l
+#6	1.50	Sprite 0.5 l
+6	1.50	OeTea Pfirsich 0.5 l
+6	1.50	OeTea Wassermelone 0.5 l
 3	1.00	Wasser 0.7 l
-0	1.00	Mate Cola 0.33 l
-0	1.00	Premium Cola 0.33 l
-0	1.00	Hermann Orange 0.33 l
-0	1.00	Hermann Apfel Kirsch 0.33 l
-0	1.00	Hermann Zitrone 0.33 l
+6	1.00	Mate Cola 0.33 l
+#0	1.00	FritzKola
+#6	1.00	Premium Cola 0.33 l
+#0	1.00	Hermann Rhabarber-Erdbeere
 0	1.00	Hermann Apfel 0.33 l
-0	1.00	Hermann Melone 0.33 l
+0	1.00	Hermann Apfel-Kirsch 0.33 l
+#0	1.00	Hermann Mocca 0.33 l
+#0	1.00	Hermann Orange 0.33 l
 0	1.00	Hermann Lakritz 0.33 l
-0	1.00	Hermann Kaffee 0.33 l
-0	1.00	Spezi 0.33 l
-0	1.00	Frohlunder 0.33 l
-1	0.50	Duplo
-1	0.50	Kinderriegel
-1	0.50	Pick Up
-1	0.50	Mentos
-1	0.50	Hanuta
-2	1.00	Twix
+0	1.00	Hermann Melone-Limette 0.33 l
+#0	1.00	Hermann Zitrone 0.33 l
+0	1.00	Hermann Orange 0.33 l
+0	1.00	Hermann Holunder 0.33 l
+6	1.50	Paulaner Spezi 0.5 l
+6	1.00	Spezi 0.33 l
+3	1.00	Durstloescher 0.5 l
+#0	1.00	Frohlunder 0.33 l
+#1	0.50	Duplo
+#1	0.50	Kinderriegel
+1	1.00	Pick Up
+1	0.50	Memtos
+#1	0.50	Hanuta
+#2	1.00	Twix
 2	1.00	Mars
-2	1.00	Snickers
-2	1.00	Bounty
+#2	1.00	Snickers
+#2	1.00	Bounty
 2	1.00	Lion
+#2	1.00	Kit Kat Crunchy
 2	1.00	Kit Kat
-2	1.00	Milky Way
+#2	1.00	Milky Way 2
 2	1.00	Goldbaeren
 2	1.00	Mr. Tom
-2	1.00	Nic Nac's
-2	1.00	Knoppers
-2	1.00	M&M's
-2	1.00	Daim
+#2	1.00	Nic Nac's
+#2	1.00	Knoppers
+#2	1.00	M&M's
+#2	1.00	Daim
 2	1.00	Fritt Stick
 2	1.00	Chips
+#2	1.00	Ringli
 3	10.00	Scratchcard
-3	18.00	Eintritt WE
-3	9.00	Eintritt SA
-3	16.00	T-Shirt
-5	2.5	Tschunk
-5	1	Sake
+3	21.00	Eintritt WE
+3	10.00 	Eintritt WE U18
+1	10.00	Eintritt FR
+3	10.00	Eintritt SA
+3	5.00	Eintritt SO
+#3	20.00	T-Shirt
+5	3	Tschunk
+#5	1	Sake
 7	8.00	USB-Loetkolben
-2	1	Waffel
+#7	6.00	Bad-USB-Stick
+#7	23.00	LaborBadge
+#7	5	Bauteile Loetworkshop
+#2	1	Waffel
+2	5.00	Essen

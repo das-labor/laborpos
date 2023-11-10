@@ -62,6 +62,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		buy(1, "#sound");
 	});
+	$("#buycard").click(function(e){
+		e.preventDefault();
+		buy(2, "#sound");
+	});
 	$("#undo").click(function(e){
 		e.preventDefault();
 		for (item in list) {

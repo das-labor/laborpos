@@ -12,12 +12,12 @@ print("Content-type:text/html\r\n\r\n",end="")
 
 try:
 	fh = open("db/boughts", "a")
-except IOError:
-	sys.exit("Failed to open the database file");
+except IOError as e:
+	sys.exit(f"Failed to open the database file: {e}");
 
 post = cgi.FieldStorage()
 boughts = json.loads(post["data"].value);
-method = "B" if post["method"].value == "1" else "C" if post["method"].value == "2" else "S"
+method = "B" if post["method"].value == "1" else "C" if post["method"].value == "2" else "T" if post["method"].value == "3" else "S"
 nowdt = datetime.datetime.now()
 nowtuple = nowdt.timetuple()
 nowtimestamp = time.mktime(nowtuple)

@@ -93,6 +93,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		buy(2, "#sound");
 	});
+	$("#buytoken").click(function(e){
+		e.preventDefault();
+		buy(3, "#sound");
+	});
 	$("#undo").click(function(e){
 		e.preventDefault();
 		for (item in list) {

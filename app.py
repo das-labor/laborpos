@@ -62,9 +62,10 @@ print("""
 					<a class="btn btn-lg btn-warning disabled action" href="#" id="undo" tabindex="6">Storno (Scratch)</a>
 				</li>
 			</ul>
-			<!--a class="btn btn-lg btn-success disabled action" href="#" id="buycard" tabindex="8">Card (EMV)</a>&nbsp;-->
-			<a class="btn btn-lg btn-success disabled action" href="#" id="buycash" tabindex="7">Cash</a>&nbsp;
-			<a class="btn btn-lg btn-success disabled action" href="#" id="buy" tabindex="8">Scratch</a>
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buycard" tabindex="7">Card (EMV)</a>&nbsp;
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buytoken" tabindex="8">Token</a>&nbsp;
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buycash" tabindex="9">Cash</a>&nbsp;
+			<a class="btn btn-lg btn-success disabled action" href="#" id="buy" tabindex="10">Scratch</a>
 		</nav>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
